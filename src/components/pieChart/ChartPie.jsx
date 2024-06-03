@@ -54,9 +54,7 @@ const ChartPie = () => {
         <div className="chart_items">
           <Pie data={data} />
           <div className="pro_buttons">
-            <button disabled={offset} onClick={() => setOffset((p) => p - 1)}>
-              preview
-            </button>
+            <button onClick={() => setOffset((p) => p - 1)}>preview</button>
             <button onClick={() => setOffset((p) => p + 1)}>next</button>
           </div>
         </div>
